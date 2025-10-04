@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magos</title>
+</head>
+<body>
+    <h1>Listado de Magos</h1>
+    <ul>
+        {% for mago in magos %}
+            <li>{{ mago.nombre }} - {{ mago.anios }} - Fecha-Actuacion:: {{ colaborador.fecha_actuacion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

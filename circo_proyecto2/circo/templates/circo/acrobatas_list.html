@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acrobatas</title>
+</head>
+<body>
+    <h1>Listado de Acrobatas</h1>
+    <ul>
+        {% for acrobata in acrobatas %}
+            <li>{{ acrobata.nombre }} - {{ acrobata.descripcion }} - fecha_actuacion: {{ acrobata.fecha_creacion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
